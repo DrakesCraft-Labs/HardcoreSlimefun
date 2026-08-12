@@ -1,0 +1,34 @@
+# HardcoreSlimefun - Slimefun en modo duro
+#
+# TODO VIENE APAGADO A PROPOSITO.
+#
+# Los valores originales del autor eran destructivos: se perdia una investigacion en cada
+# muerte, habia un 5% de perderlas TODAS, y una de cada diez investigaciones fallaba. En un
+# servidor con gente que lleva meses desbloqueando cosas, eso no se activa sin avisar.
+#
+# Para encenderlo, sube los numeros poco a poco y avisa antes en Discord.
+
+on-death:
+  # Perder una investigacion al azar al morir.
+  reset-random-research: false
+  # Probabilidad (0-100) de perder TODAS las investigaciones al morir.
+  chance-to-reset-all-researches: 0
+
+on-research:
+  # Probabilidad (0-100) de que una investigacion falle y haya que repetirla.
+  chance-of-failure: 0
+
+android:
+  # Probabilidad (0-100) de que un androide se averie.
+  chance-to-malfunction: 0
+  # Cuanto dura la averia, en segundos.
+  malfunction-duration: 30
+
+# Mensajes que ve el jugador. Estos pisan a los del codigo, asi que es aqui donde hay que
+# traducirlos.
+messages:
+  # %research% muestra el nombre de la investigacion perdida.
+  lost-random-research: '&cHas perdido una investigacion que ya tenias desbloqueada!'
+  lost-all-research: '&cNo puede ser! Has perdido todas tus investigaciones!'
+  research-failed: '&cLa investigacion ha fallado! Tendras que intentarlo otra vez :^)'
+  android-malfunctioned: '&cTu robot se ha averiado! Volvera a funcionar dentro de un rato.'
