@@ -41,7 +41,6 @@ public class HardcoreSlimefun extends JavaPlugin {
             getDescription().getVersion().startsWith("Build")) {
         }
 
-        new HardcoreMetrics(this).start();
 
         getServer().getPluginManager().registerEvents(new Events(), this);
         getServer().getPluginManager().registerEvents(new AndroidEvents(), this);

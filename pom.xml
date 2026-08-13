@@ -44,11 +44,7 @@
             <version>1.1.1</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.bstats</groupId>
-            <artifactId>bstats-bukkit</artifactId>
-            <version>2.2.1</version>
-        </dependency>
+        
 
         <dependency>
             <groupId>com.google.code.findbugs</groupId>
@@ -101,10 +97,7 @@
                             <pattern>io.github.bakedlibs.dough</pattern>
                             <shadedPattern>dev.walshy.hardcoreslimefun.dough</shadedPattern>
                         </relocation>
-                        <relocation>
-                            <pattern>org.bstats</pattern>
-                            <shadedPattern>dev.walshy.hardcoreslimefun.bstats</shadedPattern>
-                        </relocation>
+                        
                         <relocation>
                             <pattern>net.guizhanss.guizhanlib</pattern>
                             <shadedPattern>dev.walshy.hardcoreslimefun.guizhanlib</shadedPattern>
