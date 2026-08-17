@@ -47,11 +47,11 @@ public class Config {
         ////////////////////////
         // Messages
         ////////////////////////
-        lostRandomResearch = config.getString("messages.lost-random-research", "&cHas perdido una investigación que ya tenías desbloqueada!");
-        lostAllResearch = config.getString("messages.lost-all-research", "&cHas perdido todas tus investigaciones!");
-        researchFailed = config.getString("messages.research-failed", "&cLa investigación ha fallado!");
+        lostRandomResearch = config.getString("messages.lost-random-research", "&cPerdiste una investigación desbloqueada!");
+        lostAllResearch = config.getString("messages.lost-all-research", "&cperdiste toda tu investigación!");
+        researchFailed = config.getString("messages.research-failed", "&cInvestigación fallida!");
         androidMalfunctioned = config.getString("messages.android-malfunctioned",
-            "&cTu robot se ha averiado! Volverá a funcionar dentro de un rato.");
+            "&cHay algo mal con tu robot! Volverá a funcionar después de un tiempo..");
     }
 
     private double getPercent(@Nonnull FileConfiguration config, @Nonnull String path, double defaultValue) {

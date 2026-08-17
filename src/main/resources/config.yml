@@ -1,34 +1,28 @@
-# HardcoreSlimefun - Slimefun en modo duro
-#
-# TODO VIENE APAGADO A PROPOSITO.
-#
-# Los valores originales del autor eran destructivos: se perdia una investigacion en cada
-# muerte, habia un 5% de perderlas TODAS, y una de cada diez investigaciones fallaba. En un
-# servidor con gente que lleva meses desbloqueando cosas, eso no se activa sin avisar.
-#
-# Para encenderlo, sube los numeros poco a poco y avisa antes en Discord.
-
+# Activar actualizaciones automáticas
+auto-update: true
 on-death:
-  # Perder una investigacion al azar al morir.
-  reset-random-research: false
-  # Probabilidad (0-100) de perder TODAS las investigaciones al morir.
-  chance-to-reset-all-researches: 0
+  # empezar atrue, el jugador perderá una investigación aleatoria sobre la muerte.
+  reset-random-research: true
+  # Posibilidad de restablecer toda la investigación cuando el jugador muere(porcentaje)
+  # Valores válidos: 0-100，empezar a100La investigación siempre se reiniciará.，0la investigación no se restablecerá
+  chance-to-reset-all-researches: 5
 
 on-research:
-  # Probabilidad (0-100) de que una investigacion falle y haya que repetirla.
-  chance-of-failure: 0
+  # Probabilidad de fracaso de la investigación.(porcentaje)
+  # Valores válidos: 0-100，empezar a100siempre falla，0no fallará
+  chance-of-failure: 10
 
 android:
-  # Probabilidad (0-100) de que un androide se averie.
-  chance-to-malfunction: 0
-  # Cuanto dura la averia, en segundos.
+  # Probabilidad de falla de la máquina(porcentaje)
+  # Valores válidos: 0-100，empezar a100siempre se rompe，0no funcionará mal
+  chance-to-malfunction: 10
+  # Duración del fallo de la máquina(Segundo)
   malfunction-duration: 30
 
-# Mensajes que ve el jugador. Estos pisan a los del codigo, asi que es aqui donde hay que
-# traducirlos.
+# Mensaje rápido
 messages:
-  # %research% muestra el nombre de la investigacion perdida.
-  lost-random-research: '&cHas perdido una investigacion que ya tenias desbloqueada!'
-  lost-all-research: '&cNo puede ser! Has perdido todas tus investigaciones!'
-  research-failed: '&cLa investigacion ha fallado! Tendras que intentarlo otra vez :^)'
-  android-malfunctioned: '&cTu robot se ha averiado! Volvera a funcionar dentro de un rato.'
+  # disponible %research% para mostrar los nombres de los estudios faltantes
+  lost-random-research: '&cPerdiste una investigación desbloqueada!'
+  lost-all-research: '&cOh, no!perdiste toda tu investigación!'
+  research-failed: '&cInvestigación fallida! necesitas intentarlo de nuevo :^)'
+  android-malfunctioned: '&cHay algo mal con tu robot! Volverá a funcionar después de un tiempo..'

@@ -1,4 +1,7 @@
-target/
-build/
-*.jar
-.idea/
+/target/
+/out/
+/build/
+/.idea/
+*.iml
+
+.gradle/

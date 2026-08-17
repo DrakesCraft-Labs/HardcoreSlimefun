@@ -32,7 +32,7 @@ public class HardcoreSlimefun extends JavaPlugin {
         Config.INSTANCE.load(this.getConfig());
 
         if (getServer().getPluginManager().getPlugin("Slimefun") == null) {
-            getLogger().severe("No tienes Slimefun instalado! Este plugin no se va a activar...");
+            getLogger().severe("no lo tienes instalado Slimefun! Este complemento no estará habilitado...");
             getServer().getPluginManager().disablePlugin(this);
             return;
         }
@@ -41,6 +41,7 @@ public class HardcoreSlimefun extends JavaPlugin {
             getDescription().getVersion().startsWith("Build")) {
         }
 
+        new HardcoreMetrics(this).start();
 
         getServer().getPluginManager().registerEvents(new Events(), this);
         getServer().getPluginManager().registerEvents(new AndroidEvents(), this);
