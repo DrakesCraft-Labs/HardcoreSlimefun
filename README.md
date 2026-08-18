@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/HardcoreSlimefun/main/docs/banner.svg" width="100%" alt="HARDCORESLIMEFUN Animated Banner" />
+  <img src="https://raw.githubusercontent.com/DrakesCraft-Labs/HardcoreSlimefun/main/banner.svg" width="100%" alt="HARDCORESLIMEFUN Animated Banner" />
 </p>
 
 # HardcoreSlimefun
